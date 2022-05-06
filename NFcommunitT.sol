@@ -13,7 +13,7 @@ contract NFcommuniT is ERC721A, Ownable, Pausable {
     string public baseURI;
 
     constructor() ERC721A("NFcommuniT", "NFCT") {
-        setBaseURI("ipfs://Qmch8BC5tvXKWRD7v2EBVZ2wCcwnvDvfQd24jdQZK92rbL/");
+        setBaseURI("ipfs://QmSM3X3nA1XkGTZRtZ2oQxKayd9NhT2HAg9jjRncYmXuy1/");
         _pause();
     }
 
@@ -68,7 +68,7 @@ contract NFcommuniT is ERC721A, Ownable, Pausable {
         _unpause();
     }
 
-    function _startTokenId() internal view virtual override returns (uint256) {
+    function _startTokenId() internal view override returns (uint256) {
         return 1;
     }
 }
